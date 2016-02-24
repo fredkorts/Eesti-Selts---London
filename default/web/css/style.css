@@ -1,0 +1,108 @@
+/*VARIABLES AND DEFAULT SETTINGS*/
+/* line 7, ../scss/style.scss */
+html, body { height: 100%; margin: 0; padding: 0; }
+
+/* line 12, ../scss/style.scss */
+ul { text-decorations: none; padding: 0; margin: 0; }
+
+/* line 17, ../scss/style.scss */
+a { color: #adbdff; text-decoration: none; }
+
+/* line 21, ../scss/style.scss */
+.menu_links a { font-family: Tahoma, Geneva, sans-serif; }
+
+/* line 24, ../scss/style.scss */
+h1, h2, h3 { font-family: Tahoma, Geneva, sans-serif; }
+
+/* line 27, ../scss/style.scss */
+a, p { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+
+/*VARIABLES AND DEFAULT SETTINGS END*/
+/*BANNER STYLE*/
+/* line 35, ../scss/style.scss */
+.banner { width: 100%; height: 150px; background: #4f7cac; z-index: 1; }
+
+/*BANNER STYLE END*/
+/*MENU STYLE*/
+/* line 45, ../scss/style.scss */
+.primary_menu { width: 100%; height: 50px; background: #1c1421; position: absolute; z-index: 1; }
+
+/* line 52, ../scss/style.scss */
+.menu_button { height: 100%; width: 40px; display: none; z-index: 1; }
+
+/* line 58, ../scss/style.scss */
+.menu_links { width: 800px; float: left; height: 100%; margin-left: 50px; font-family: Verdana, Georgia, sans-serif; font-weight: bold; font-size: 14px; z-index: 1; }
+/* line 68, ../scss/style.scss */
+.menu_links ul { display: inline-block; height: 100%; position: relative; }
+/* line 73, ../scss/style.scss */
+.menu_links li { color: white; display: inline-block; width: auto; padding-right: 20px; padding-left: 10px; height: 100%; text-align: left; }
+/* line 82, ../scss/style.scss */
+.menu_links li:hover > a { color: #b74f6f; }
+/* line 85, ../scss/style.scss */
+.menu_links a { color: white; position: relative; top: 15px; }
+
+/* line 92, ../scss/style.scss */
+#my-menu { z-index: 2; }
+/* line 95, ../scss/style.scss */
+#my-menu ul { height: auto; }
+/* line 98, ../scss/style.scss */
+#my-menu li { height: auto; }
+/* line 101, ../scss/style.scss */
+#my-menu a { top: 0px; font-size: 18px; }
+/* line 105, ../scss/style.scss */
+#my-menu a:hover { color: #b74f6f; }
+
+/* line 109, ../scss/style.scss */
+.menu_image { width: 50px; height: 50px; }
+
+/*MENU STYLE END*/
+/*BOX SLIDER*/
+/* line 117, ../scss/style.scss */
+.box_slider { width: 100%; height: auto; background: white; position: relative; top: 50px; }
+
+/*BOX SLIDER END*/
+/*CONTENT AREA*/
+/* line 128, ../scss/style.scss */
+.container { min-height: 800px; width: 800px; margin: 0 auto; margin-top: 100px; }
+
+/*CONTENT AREA END*/
+/*GALLERY AREA*/
+/* line 138, ../scss/style.scss */
+.gallery { width: 100%; min-height: 300px; height: auto; }
+/* line 143, ../scss/style.scss */
+.gallery ul { list-style-type: none; width: 100%; height: auto; }
+/* line 148, ../scss/style.scss */
+.gallery li { width: 150px; height: 150px; overflow: hidden; display: inline-block; border: 3px solid #4f7cac; background-position: center center; background-size: cover; }
+/* line 157, ../scss/style.scss */
+.gallery img { -webkit-transform: translate(-50%, -25%); -ms-transform: translate(-50%, -25%); transform: translate(-50%, -25%); opacity: 0.7; transition: opacity .25s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
+/* line 167, ../scss/style.scss */
+.gallery img:hover { opacity: 1; }
+
+/*GALLERY AREA ENDS*/
+/*FOOTER AREA*/
+/* line 176, ../scss/style.scss */
+.footer { width: 100%; height: 300px; background: #8b94a3; position: relative; bottom: 0px; }
+
+/*FOOTER AREA END*/
+/*RESPONSIVE AREA BEGINS*/
+@media only screen and (max-width: 800px) { /*CONTENT AREA*/
+  /* line 190, ../scss/style.scss */
+  .container { width: 95%; margin-left: 20px; margin-right: 200px; }
+  /*CONTENT AREA END*/
+  /*BANNER AREA*/
+  /* line 199, ../scss/style.scss */
+  .banner { height: 50px; }
+  /*BANNER AREA ENDS*/
+  /*GALLERY AREA*/
+  /* line 206, ../scss/style.scss */
+  .gallery img { opacity: 1; }
+  /*GALLERY AREA ENDS*/
+  /*MENU AREA*/
+  /* line 213, ../scss/style.scss */
+  .menu_links { width: 100%; margin-left: 0px; display: none; }
+  /* line 218, ../scss/style.scss */
+  .menu_button { display: block; }
+  /* line 221, ../scss/style.scss */
+  .menu_button img { position: relative; top: 10px; left: 5px; }
+  /*MENU AREA*/ }
+/*RESPONSIVE AREA ENDS*/
